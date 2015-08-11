@@ -14,6 +14,8 @@ namespace Cinema.UI.Admin.Controllers
     {
         protected ActorService _actorService;
         protected GenreService _genreService;
+        protected HallService _hallService;
+        protected MovieService _movieService;
         public BaseController()
         {
             string cnnString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ToString();
@@ -22,6 +24,10 @@ namespace Cinema.UI.Admin.Controllers
             _actorService = new ActorService(actorsRepo);
             var genreRepo = new GenreRepository(dbContext);
             _genreService = new GenreService(genreRepo);
+            var hallRepo = new HallRepository(dbContext);
+            _hallService = new HallService(hallRepo);
+            var movieRepo = new MovieRepository(dbContext);
+            _movieService = new MovieService(movieRepo, actorsRepo);
         }
     }
 }

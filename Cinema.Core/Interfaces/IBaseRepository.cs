@@ -14,6 +14,7 @@ namespace Cinema.Core.Interfaces
         TEntity GetById(int id);
         List<TEntity> GetAll();
         void Delete(TEntity entity);
+        void Edit(TEntity entity);
         void Save();
     }
 

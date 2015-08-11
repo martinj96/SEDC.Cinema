@@ -24,6 +24,10 @@ namespace Cinema.AppServices
             _actorRepository.Add(entity);
             _actorRepository.Save();
         }
+        public Actor GetActorById(int id)
+        {
+            return _actorRepository.GetById(id);
+        }
         public void DeleteActor(int id)
         {
             var actor = _actorRepository.GetById(id);

@@ -108,6 +108,7 @@
     <Compile Include="Controllers\ActorController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\GenreController.cs" />
+    <Compile Include="Controllers\HallController.cs" />
     <Compile Include="Controllers\MovieController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -128,6 +129,10 @@
     <Content Include="Views\Actor\Create.cshtml" />
     <Content Include="Views\Genre\Index.cshtml" />
     <Content Include="Views\Genre\Create.cshtml" />
+    <Content Include="Views\Hall\Index.cshtml" />
+    <Content Include="Views\Hall\Create.cshtml" />
+    <Content Include="Views\Movie\Create.cshtml" />
+    <Content Include="Views\Movie\Actors.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -139,7 +144,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Base\" />
-    <Folder Include="Views\Movies\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cinema.AppServices\Cinema.AppServices.csproj">

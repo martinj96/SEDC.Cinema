@@ -12,7 +12,7 @@ namespace Cinema.Core.Entities
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string ImageUrl { get; set; }
-        public int TicketPrice { get; set; }
+        public decimal TicketPrice { get; set; }
         public virtual ICollection<Hall> Halls { get; set; }
         public virtual ICollection<Actor> Actors { get; set; }
         public virtual ICollection<Genre> Gengres { get; set; }
